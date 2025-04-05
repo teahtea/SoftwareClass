@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> MY PERSONAL TRAINNING</title>
+    </head>
+    <body>
+        <p><h1>CONTACT FORM</h1></p>
+        <form action="homepage.html" method="post" style="background-color: brown;">
+            <p><label>Fullname</label>
+            <input type="text" name="fullname"></p>
+            <p>
+                <label>Home address</label>
+                <textarea name="description"></textarea>
+            </p>
+            <p>
+                <label>Phone Number</label>
+                <input type="text" name="phonenumber">
+            </p>
+            <p>
+                <label>Gender</label>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female"> Female
+                <input type="radio" name="gender" value="both"> Chosen not to say
+            </p>
+            <p>
+                <label>Email Address</label>
+                <input type="email" name="emailaddress">
+            </p>
+            <p>
+                <label>Country</label>
+                <select name="country"> 
+                    <option value="select">select</option>
+                    <option value="nigeria">Nigeria</option>
+                    <option value="ghana">Ghana</option>
+                    <option value="liberia">Liberia</option>
+                    <option value="cameroun">Cameroun</option>
+                    <option value="togo">Togo</option>
+                    <option value="southafrica">South Africa</option>
+                    <option value="zambia">Zambia</option>
+            
+                </select>
+            </p>
+            <p>
+                <label>Feedback</label>
+                <input type="checkbox" name="feedback" value="phonecall"> Phones Call
+                    <input type="checkbox" name="feedback" value="fax"> Fax
+                    <input type="checkbox" name="feedback" value="email"> Email
+                    <input type="checkbox" name="feedback" value="chat"> Chat
+
+            </p>
+<button type="submit">Submit</button>
+<button type="reset">Reset</button>
+
+        </form>
+    </body>
+</html>

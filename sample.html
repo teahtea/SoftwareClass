@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Table Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>APEX Store Valentine's Day Draw</title>
+</head>
+<body>
+    <h1>APEX Store Valentine's Day Draw</h1>
+    <p>Enter your cart details:</p>
+    <label for="items">Number of Items:</label>
+    <input type="number" id="items" value="0"><br><br>
+    <label for="cost">Total Cost (N):</label>
+    <input type="number" id="cost" value="0"><br><br>
+    <label for="item1">Item 1 Cost (N):</label>
+    <input type="number" id="item1" value="0"><br><br>
+    <label for="item2">Item 2 Cost (N):</label>
+    <input type="number" id="item2" value="0"><br><br>
+    <label for="item3">Item 3 Cost (N):</label>
+    <input type="number" id="item3" value="0"><br><br>
+    <button onclick="checkEligibility()">Check Eligibility</button>
+    <p id="result"></p>
+
+    <script>
+        function checkEligibility() {
+            let items = parseInt(document.getElementById('items').value);
+            let cost = parseInt(document.getElementById('cost').value);
+            let item1Cost = parseInt(document.getElementById('item1').value);
+            let item2Cost = parseInt(document.getElementById('item2').value);
+            let item3Cost = parseInt(document.getElementById('item3').value);
+            let resultElement = document.getElementById('result');
+
+            if (items >= 10 || cost >= 20000) {
+                let averageCost = cost / items;
+                resultElement.textContent = "Congratulations! You are eligible for the Valentine's Day prize draw. " +
+                    "Total items: " + items + ", Total cost: N" + cost + ", Average cost: N" + averageCost.toFixed(2) +
+                    ", Item 1: N" + item1Cost + ", Item 2: N" + item2Cost + ", Item 3: N" + item3Cost;
+            } else {
+                resultElement.textContent = "Sorry, you are not eligible for the draw. " +
+                    "To qualify, purchase at least 10 items or goods worth N20,000. " +
+                     "Total items: " + items + ", Total cost: N" + cost + ", Average cost: N" + (items > 0 ? (cost / items).toFixed(2) : 0) +
+                     ", Item 1: N" + item1Cost + ", Item 2: N" + item2Cost + ", Item 3: N" + item3Cost;
+            }
+        }
+    </script>
+</body>
+</html>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>

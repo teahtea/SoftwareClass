@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <button type="button" id="btn">submit</button> -->
+    <form action="" method="post">
+      <p>
+        <label>Username</label>
+        <input type="text" name="username" id="username" />
+      </p>
+      <p>
+        <label>password</label>
+        <input type="password" name="password" id="password" />
+        <button type="button" id="toggle_password" class="toggle_password">show password</button>
+      </p>
+    </form>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+      integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $("#toggle_password").click(function(){
+            var password = $("#password");
+            // var passwordType = password.attr("type");
+            var button = $(this);
+
+            if(password.attr("type") == "password"){
+                password.attr("type","text");
+                button.text("hide password")
+            }else{
+                password.attr("type","password");
+                button.text("show password")
+            
+            }
+
+        })
+      });
+    </script>
+  </body>
+</html>

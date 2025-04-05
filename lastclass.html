@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello world</title>
+    <!-- <style>
+        body{
+            font-size: 50px; font-family: Arial, Helvetica, sans-serif
+        }
+    </style> -->
+</head>
+<body>
+
+    <p class="face">GOD IS GOD</p>
+    <p class="face">AT ALL TIMES</p>
+    <p class="face">my names are;</p>
+    <p id="show">GOD HELP!!!!</p>
+    <p id="result"></p>
+    
+    <button id="btn" onclick = "showShowTag()">ShowShowTag</button>
+    <!-- <form action="">dear 
+        <label>Number 1</label>
+        <input type="number" name="number_1" id="number1">
+        <label>Number 2</label>
+        <input type="number" name="number_2" id="number2">
+       <button type="button" onclick="addNumbers()">Add</button>
+       <button type="button" onclick="subtractNumbers()">Subtract</button>
+       <button type="button" onclick="divideNumbers()">Divide</button>
+
+    </form> -->
+<!-- <p>Hello world</p>
+        <p style="border: 1px double red; margin-top: 40px; margin-left: 40px; padding-left: 40px;"> Hi Titilope</p>
+    <p style="border: 1px solid blue; padding: 40px;">SOFTWARE ENGINEER</p>
+    <P style="border-top: 5px solid green; border-right: 5px solid red; border-bottom: 5px solid black; border-left: 5px solid blue; width: 50%; height: 200px;">My names are;</P> -->
+
+    <!-- <button style="background-color: blue; color: white; border-radius: 10px; cursor: pointer;" id="btn" onclick="like()">like page</button> -->
+    <script type="text/javascript">
+// function greet(){
+
+// var time = prompt("what time are you greeting us");
+
+// if(time < 12){
+//     alert("Good Morning");
+// }else {
+//     alert("Good Afternoon");
+// }
+
+// }
+// greet();
+// function addNumbers()
+// {
+//     var number1 = document.getElementById('number1').value;
+//     var number2 = document.getElementById('number2').value;
+ 
+//     var total = parseInt (number1) + parseInt (number2);
+//     alert(total);
+// }
+
+// function subtractNumbers()
+// {
+//     var number1 = document.getElementById('number1').value;
+//     var number2 = document.getElementById('number2').value;
+ 
+//     var total = number1 - number2;
+//     alert(total);
+// }
+
+// function divideNumbers()
+// {
+//     var number1 = document.getElementById('number1').value;
+//     var number2 = document.getElementById('number2').value;
+ 
+//     var total = number1 / number2;
+//     alert(total);
+// }
+
+// var number=0;
+
+// function like(){
+//     number++;
+
+// if(number== 1){
+// document.getElementById("btn").innerHTML=number + "like"
+// }
+// else{
+//     document.getElementById("btn").innerHTML=number + "likes"
+// }
+// }
+
+// function exam(score){
+
+// var score = prompt("what is your score");
+
+// if(score < 50){
+//     alert("failed");
+// }else {
+//     alert("passed");
+// }
+
+// }    
+// exam(50)
+// exam(30)
+
+// 
+
+// function gender(){
+//     var gender = prompt("Please enter your gender (Male/Female):");
+
+//     if (gender && gender.toLowerCase() === "female") {
+//   alert("Shoes and bags are available for sale!");
+// } else if (gender && gender.toLowerCase() === "male") {
+//   alert("We have phones for sale!");
+// } else {
+//   alert("We don't have anything for your gender.");
+// }
+// }
+// gender()
+
+// function name(){
+//     var text = prompt("what is your name", "John");
+   
+
+//     alert(text);
+// }
+
+// name()
+// for( a=1; a<=150; a++){
+//     document.write(a + "<br>")
+// }
+
+// for(a=1; a<=5; a++){
+//     document.write("all is well!" + "<br>")
+// }
+
+// for ( i=2; i<= 15; i+=2)
+// {
+//     document.write(i + "<br>")
+//   }
+// var names=["tolu","shade","bolu","tope","bola"];
+// var solution = names.sort();
+// document.write(solution);
+
+var tags = document.getElementsByClassName("face");
+
+// document.getElementByClassName("face").innerHTML;
+// document.getElementsByClassName("face").styel.color:"red";
+
+for(i=0; i<tags.length; i++)
+{
+   tags[i].style.backgroundColor = 'Yellow' ;
+   tags[i].style.padding= '50px' ;
+   tags[i].style.fontWeight = 'Bold' ;
+   tags[i].style.textAlign = 'center' ;
+   tags[i].style.fontSize = '30px' ;
+}
+document.getElementById("show").style.visibility = 'hidden';
+
+function showShowTag(){
+  
+    document.getElementById("show").style.visibility = 'visible';
+    document.getElementById("show").style.backgroundColor = 'blue' ;
+    document.getElementById("show").style.padding= '50px' ;
+    document.getElementById("show").style.fontWeight = 'Bold' ;
+    document.getElementById("show").style.textAlign = 'center' ;
+    document.getElementById("show").style.fontSize = '30px' ;
+    document.getElementById("show").style.color = 'white'
+    document.getElementById("show").innerHTML='YOU ARE DOING WELL!!';
+}
+
+</script>
+</body>
+</html>

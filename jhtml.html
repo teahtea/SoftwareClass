@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p></p>
+    <form action="" method="post">
+        <p>
+            <label for="username">User Name</label>
+            <input type="text" name="username" id="username">
+        </p>
+        <p>
+            <label for="password" >password</label>
+            <input type="password" name="password" id="password" >
+        </p>
+        <p>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="confirm-password" name="confirm-password" id="confirm-password">
+        </p>
+        <button id="btn" type="button">Login</button>
+        </form>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+      integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script type="text/javascript">
+$(document).ready(function(){
+    $("#btn").click(function(){
+        var username = $('#username').val();
+        var password = $('#password').val();
+        var confirm_password= $('#confirm_password').val();
+        if(username == ""|| password == "" || confirm_password == "")
+        {
+            alert("please fill the field")
+        }else{
+            alert("successful");
+        }
+    });
+});
+  
+
+    </script>
+</body>
+</html>
+
+
+        
+     

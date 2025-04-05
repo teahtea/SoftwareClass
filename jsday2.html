@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Subject</th>
+          <th scope="col">Scores</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">English</th>
+          <td><input type="number" class="english" /></td>
+        </tr>
+        <tr>
+          <th scope="row">Mathematics</th>
+          <td><input type="number" class="mathematics" /></td>
+        </tr>
+        <tr>
+          <th scope="row">Chemistry</th>
+          <td><input type="number" class="chemistry" /></td>
+        </tr>
+        <tr>
+          <th scope="row">Biology</th>
+          <td><input type="number" class="biology" /></td>
+        </tr>
+        <tr>
+          <th scope="row">French</th>
+          <td><input type="number" class="french" /></td>
+        </tr>
+      </tbody>
+    </table>
+    <button type="button" id="btn">Result</button>
+    <table class="table">
+      <tbody>
+        <tr>
+          <th>Total</th>
+          <td id="result"></td>
+        </tr>
+      </tbody>
+    </table>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+      integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                var english = parseInt($(".english").val());
+                var mathematics= parseInt($(".mathematics").val());
+                var biology = parseInt($(".biology").val());
+                var chemistry= parseInt($(".chemistry").val());
+                var french = parseInt($(".french").val());
+                var total = english + mathematics + biology + chemistry + french
+                $("#result").text(total);
+            })
+        })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <<p class="text">Software Engineer</p> -->
+   
+    <form action="" method="post">
+      <p>
+        <label>Firstname</label>
+        <input
+          type="text"
+          name="first_name"
+          id="first_name"
+          placeholder="enterfirstname"
+        />
+      </p>
+      <p>
+        <label>lastname</label>
+        <input
+          type="text"
+          name="last_name"
+          id="last_name"
+          placeholder="enterlastname"
+        />
+      </p>
+      <p>
+        <label>email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="enterfirstname"
+        />
+      </p>
+      <p>
+        <label>password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="enterpassword"
+        />
+      </p>
+      <p>
+        <label>Confirm password</label>
+        <input
+          type="confirm_password"
+          name="confirm_password"
+          id="confirm_password"
+          placeholder="enterpassword"
+        />
+      </p>
+      <button id="btn" type="button">Register</button>
+    </form>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"
+      integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript">
+      //   $(document).ready(function()
+      //   {
+      //     $(".text").css({
+      //       "background-color": "yellow",
+      //       padding: "50px",
+      //       "text-align": "center",
+      //     });
+      //   })
+
+      $(document).ready(function(){
+        $("#btn").click(function(){
+        var firstname = $('#first_name').val();
+        var lastname = $('#last_name').val();
+        var email = $('#email').val();
+        var password = $('#password').val();
+        var confirm_password= $('#confirm_password').val();
+
+        if(password != confirm_password){
+          $('#result').text('password does not match');
+          $('#result').css({"background-color":"red","padding": "50px","font-size":"50px", "text-align":"center","color":"white"});
+          // alert('passowrd does not match');
+        }else if(firstname == null && lastname == null && email == null && password == null && confirm_password == ""){
+          $('#result').text('Please complete the field');
+          $('#result').css({"background-color":"red","padding": "50px","font-size":"50px", "text-align":"center","color":"white"});
+          // alert('Please complete the field');
+        }else{
+        $('#result').text('Registration successful');
+        $('#result').css({"background-color":"green","padding": "50px","font-size":"50px", "text-align":"center","color":"white"});
+      }
+        });
+
+
+      });
+    
+    </script>
+  </body>
+</html>
